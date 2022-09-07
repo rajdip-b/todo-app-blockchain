@@ -39,7 +39,7 @@ const Navbar: FC = () => {
                         <div>{getFormattedWallet()}</div>
                     </Button>
                     :
-                    <Button onClick={handleConnectToMetamask} className={'hover:border-blue border-2 border-transparent hover:bg-transparent rounded-full w-[200px]'}>Connect Metamask</Button>
+                    <Button onClick={handleConnectToMetamask} className={'hover:border-blue border-2 border-transparent hover:text-blue hover:bg-transparent rounded-full w-[200px]'}>Connect Metamask</Button>
             }
         </div>
     </nav>

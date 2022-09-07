@@ -5,5 +5,5 @@ export const GreetingsText2 = "Create and manage your Todos directly from your b
 
 export const CreateTaskText1 = "Create a new task";
 
-export const contractAddress = '0x41c6c665CEF8bC50B89f82dE6fEA3146016F9252';
+export const contractAddress = '0xE07E8b70223200057941B1536f8E49943B1eb226';
 export const contractABI = abi.abi;
