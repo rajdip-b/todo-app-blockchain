@@ -27,7 +27,7 @@ const Navbar: FC = () => {
         toast.info("Copied to clipboard!")
     }, [wallet]);
 
-    return <nav className={'text-white py-5 flex justify-between items-center'}>
+    return <nav className={'text-white py-5 flex md:flex-row flex-col gap-5 justify-between items-center'}>
         <h2 className={'text-2xl font-semibold dark:text-white text-gray-700'}>My Todoister App</h2>
         <div className={'flex gap-10 items-center'}>
             <ThemeToggler />

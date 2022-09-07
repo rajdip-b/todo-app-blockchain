@@ -22,8 +22,8 @@ const App = () => {
             <div className={'max-w-[1500px] md:w-[80%] w-[90%] mx-auto flex flex-col gap-10 justify-between'}>
                 <Navbar />
                 <div className={'flex md:flex-row flex-col gap-10 items-center'}>
-                    <Greetings className={'md:w-[60%]'}/>
-                    <CreateTask className={'md:w-[40%] py-10'}/>
+                    <Greetings className={'md:w-[60%] w-full'}/>
+                    <CreateTask className={'md:w-[40%] w-full py-10'}/>
                 </div>
                 <TaskView />
             </div>
