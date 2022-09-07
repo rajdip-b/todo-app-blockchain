@@ -48,8 +48,8 @@ const CreateTask: FC<{className?: string}> = ({className}) => {
         })
     }, [wallet, dispatch, formData])
 
-    return <Card className={`${className} bg-gray-800/50 backdrop-filter-blur flex flex-col gap-5`}>
-        <div className={'text-white text-3xl mb-5'}>{CreateTaskText1}</div>
+    return <Card className={`${className} bg-stone-100 dark:bg-gray-800/50 backdrop-filter-blur flex flex-col gap-5`}>
+        <div className={'text-white text-3xl mb-5 dark:text-white text-gray-700'}>{CreateTaskText1}</div>
         <Input name={'title'} value={formData.title} onChange={handleChange} header={'Task Name'} placeholder={'Frontend Design'} />
         <Input name={'content'} value={formData.content} onChange={handleChange}  header={'Task Body'} placeholder={'Create the login panel'} />
         <Button onClick={handleCreateTask}>Create</Button>

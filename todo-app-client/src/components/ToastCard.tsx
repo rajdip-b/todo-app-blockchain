@@ -1,8 +1,12 @@
 import React, { FC } from "react";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import {useSelector} from "react-redux";
+import {StoreStateType} from "../store/store";
 
 const ToastCard: FC<{ children: React.ReactNode }> = (props) => {
+    const {isDarkMode} = useSelector((state: StoreStateType) => state.app);
+
     return (
         <div>
             <ToastContainer
@@ -15,7 +19,7 @@ const ToastCard: FC<{ children: React.ReactNode }> = (props) => {
                 pauseOnFocusLoss
                 draggable={false}
                 pauseOnHover
-                theme="dark"
+                theme={`${isDarkMode ? 'dark' : 'light'}`}
             />
             {props.children}
         </div>

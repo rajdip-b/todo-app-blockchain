@@ -2,10 +2,12 @@ import {createSlice, PayloadAction} from "@reduxjs/toolkit";
 
 export interface AppSliceState {
     wallet: string | null;
+    isDarkMode: boolean;
 }
 
 const initialState: AppSliceState = {
     wallet: null,
+    isDarkMode: false
 }
 
 export const appSlice = createSlice({
@@ -15,6 +17,9 @@ export const appSlice = createSlice({
         setWallet: (state: AppSliceState, action: PayloadAction<string | null>) => {
             state.wallet = action.payload;
         },
+        toggleTheme: (state: AppSliceState) => {
+            state.isDarkMode = !state.isDarkMode;
+        }
     }
 })
 

@@ -1,6 +1,6 @@
 # Todo App - On the Blockchain
-![Todo App](./blob/app.png)
-![Todo App](./blob/app-in-use.png)
+![Todo App](./blob/dark.png)
+![Todo App](./blob/light.png)
 This application demonstrates the very basic working of an application on the blockchain using a todo list.
 
 ## Tech Stack
